@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -20,6 +20,7 @@
     "react-scroll": "^1.9.0",
     "react-tooltip": "^5.25.2",
     "react-vertical-timeline-component": "^3.6.0",
+    "styled-components": "^6.1.8",
     "tailwindcss-filters": "^3.0.0",
     "typewriter-effect": "^2.21.0"
   },
