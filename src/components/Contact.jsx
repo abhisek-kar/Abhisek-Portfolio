@@ -2,14 +2,17 @@ import React, { useState } from "react";
 import contactSvg from "../assets/Contact us-amico.svg";
 import user from "../assets/user.png";
 import email from "../assets/email (1).png";
+import mobileicon from "../assets/mobile.png";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
+  const [mobile, setMobile] = useState("");
   const handleClick = (e) => {
     if (!email || !name) {
       return alert("please fill all the fields");
     }
+    alert("successfully submitted");
   };
   return (
     <div id="contact" className="min-h-screen px-5 mt-10 grid grid-cols-2">
@@ -44,6 +47,22 @@ const Contact = () => {
           />
           <img
             src={email}
+            alt=""
+            className="w-5 h-5 absolute top-[25%] left-[4%]"
+            style={{ filter: "invert(30%)" }}
+            spellCheck={false}
+          />
+        </div>
+        <div className="relative">
+          <input
+            value={mobile}
+            onChange={(e) => setMobile(e.target.value)}
+            type="number"
+            placeholder="Mobile no. (optional)"
+            className="outline-none pl-12 py-2 rounded-full w-80 shadow-xl shadow-gray-400 font-mono text-lg tracking-wide"
+          />
+          <img
+            src={mobileicon}
             alt=""
             className="w-5 h-5 absolute top-[25%] left-[4%]"
             style={{ filter: "invert(30%)" }}

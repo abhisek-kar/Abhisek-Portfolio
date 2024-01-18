@@ -9,6 +9,18 @@ body {
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 }
 
+/* Hide the increment and decrement arrows for number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Additional styles to prevent styling issues in some browsers */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 /* project card */
 .cover {
   transition: ease-in-out all 0.5s;

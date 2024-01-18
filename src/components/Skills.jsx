@@ -9,6 +9,10 @@ import "react-vertical-timeline-component/style.min.css";
 
 const skillData = [
   {
+    skillName: "Programming",
+    skills: "Java, C, Python, Javascript",
+  },
+  {
     skillName: "Frontend Dev",
     skills: "Html, CSS, Javacript, ReactJS",
   },
@@ -61,13 +65,13 @@ const Skills = () => {
             icon={
               <img
                 src={PlusIcon}
-                style={{ filter: "invert(100%)", padding: "5px" }}
+                style={{ filter: "invert(100%)", padding: "15px" }}
               />
             }
           />
         </VerticalTimeline>
         {/*  */}
-        <div className="text-xl font-semibold">still learning</div>
+        <div className="text-base font-semibold">Still Upskilling</div>
       </div>
     </>
   );

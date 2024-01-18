@@ -76,10 +76,15 @@ const Slider = () => {
     setCurrentIndex(newIndex);
   };
   return (
-    <div className="min-h-screen  px-5 my-10">
+    <div className="min-h-screen  px-5 my-10 flex flex-col gap-10 justify-center items-center">
+      <div className=" text-center font-semibold text-2xl flex items-center justify-center gap-2">
+        <div className="w-3 h-3 bg-themegreen rounded-full"></div>
+        <div>My Projects</div>
+        <div className="w-3 h-3 bg-themegreen rounded-full"></div>
+      </div>
       <div className="flex items-center justify-evenly  gap-5 ">
         <ArrowButton onClick={prevItem} buttonIcon={leftArrow} />
-        {/* <div className="flex  gap-16">
+        <div className="flex  gap-16">
           {[
             currentIndex,
             (currentIndex + 1) % len,
@@ -94,29 +99,6 @@ const Slider = () => {
               projectLink={projectData[index]?.link}
             />
           ))}
-        </div>  */}
-        <div
-          style={{
-            display: "flex",
-            gap: "5px",
-            overflow: "hidden",
-            width: "420px",
-          }}
-        >
-          {[1, 2, 3, 4, 5, 6, 7].map((item, idx) => {
-            return (
-              <div
-                key={idx}
-                style={{
-                  flex: "0 0 60px",
-                  height: "60px",
-                  backgroundColor: "themegreen",
-                }}
-              >
-                {item}
-              </div>
-            );
-          })}
         </div>
 
         <ArrowButton onClick={nextItem} buttonIcon={rightArrow} />
