@@ -45,14 +45,14 @@ const Footer = () => {
                   style={{ filter: "invert(100%)" }}
                 />
               </a>
-              <a href="https://github.com/abhisek-kar" target="_blank">
+              {/* <a href="https://github.com/abhisek-kar" target="_blank">
                 <img
                   src={github}
                   alt="github image"
                   className="w-8 h-8"
                   style={{ filter: "invert(100%)" }}
                 />
-              </a>
+              </a> */}
               <a href="" target="_blank">
                 <img
                   src={twitter}
