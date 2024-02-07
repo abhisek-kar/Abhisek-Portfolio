@@ -3,52 +3,41 @@ import leftArrow from "../assets/left-arrow.png";
 import rightArrow from "../assets/right-arrow.png";
 const projectData = [
   {
-    name: "Project Name1",
+    name: "Ecommerce Application",
     description:
-      "I specialize in the MERN (MongoDB, Express.js, React.js, Node.js) stack.",
-    link: "#",
+      "Ecommerec website where you can buy online at an afforadable price",
+    link: "https://github.com/abhisek-kar/Ecommerce-MERN-stack",
   },
   {
-    name: "Project Name2",
-    description:
-      "I specialize in the MERN (MongoDB, Express.js, React.js, Node.js) stack.",
-    link: "#",
+    name: "Node-Bite",
+    description: "A Node and Express based REST API, for food ordering",
+    link: "https://github.com/abhisek-kar/NODE-BITE",
   },
   {
-    name: "Project Name3",
-    description:
-      "I specialize in the MERN (MongoDB, Express.js, React.js, Node.js) stack.",
-    link: "#",
+    name: "Portfolio",
+    description: "A simple static portfolio website of me",
+    link: "https://github.com/abhisek-kar/Abhisek-Portfolio",
   },
   {
-    name: "Project Name4",
+    name: "Campus Track",
     description:
-      "I specialize in the MERN (MongoDB, Express.js, React.js, Node.js) stack.",
-    link: "#",
+      "MERN based website curated for acdemic purpose in a university to track student attendance",
+    link: "https://github.com/abhisek-kar/Campus-Track",
   },
   {
-    name: "Project Name5",
-    description:
-      "I specialize in the MERN (MongoDB, Express.js, React.js, Node.js) stack.",
-    link: "#",
+    name: "Amaz Calculator",
+    description: "A simple calculator made using HTML,CSS, JAVASCRIPT",
+    link: "https://abhisek-kar.github.io/amaz-calculator.github.io/",
   },
   {
-    name: "Project Name6",
-    description:
-      "I specialize in the MERN (MongoDB, Express.js, React.js, Node.js) stack.",
-    link: "#",
+    name: "DrumKIT",
+    description: "A great Band website made with love using html, css, js",
+    link: "https://abhisek-kar.github.io/drumkit.github.io/",
   },
   {
-    name: "Project Name7",
-    description:
-      "I specialize in the MERN (MongoDB, Express.js, React.js, Node.js) stack.",
-    link: "#",
-  },
-  {
-    name: "Project Name8",
-    description:
-      "I specialize in the MERN (MongoDB, Express.js, React.js, Node.js) stack.",
-    link: "#",
+    name: "GIPHY SEARCH",
+    description: "GIF searching website using GIPHY API with pagination",
+    link: "https://alpha-bi-project-b7ea1yn2h-abhisek-kars-projects.vercel.app/",
   },
 ];
 
@@ -162,7 +151,7 @@ const ProjectCard = ({
           {ProjectDesciption}
         </p>
         <div className="texts mx-4 mt-auto mb-2 text-end font-semibold z-10">
-          source code <span className="font-bold text-lg animate-pulse">→</span>
+          <span className="font-bold text-lg animate-pulse scale-[]">→</span>
         </div>
       </a>
     </>

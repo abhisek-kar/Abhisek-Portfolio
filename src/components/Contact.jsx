@@ -23,6 +23,7 @@ const Contact = () => {
         </div>
         <div className="relative ">
           <input
+            disabled
             value={name}
             onChange={(e) => setName(e.target.value)}
             type="text"
@@ -39,6 +40,7 @@ const Contact = () => {
         </div>
         <div className="relative">
           <input
+            disabled
             value={mail}
             onChange={(e) => setMail(e.target.value)}
             type="email"
@@ -55,6 +57,7 @@ const Contact = () => {
         </div>
         <div className="relative">
           <input
+            disabled
             value={mobile}
             onChange={(e) => setMobile(e.target.value)}
             type="number"
@@ -70,6 +73,7 @@ const Contact = () => {
           />
         </div>
         <button
+          disabled
           onClick={handleClick}
           className="mt-5  py-2 rounded-full w-80  bg-themegreen text-white font-mono text-xl tracking-wide"
         >

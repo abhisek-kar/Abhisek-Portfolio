@@ -22,11 +22,15 @@ const Footer = () => {
               className="w-4 h-4 absolute top-[25%] left-2"
             />
             <input
+              disabled
               placeholder="drop ur mail"
               type="email"
-              className="outline-none py-1 pl-8 pr-2 w-60 rounded-full font-mono text-lg"
+              className="outline-none py-1 pl-8 pr-2 w-60 rounded-full font-mono text-lg bg-white"
             />
-            <button className="px-2 py-1 bg-white rounded-full ml-2 font-semibold text-lg ">
+            <button
+              disabled
+              className="px-2 py-1 bg-white rounded-full ml-2 font-semibold text-lg "
+            >
               Connect
             </button>
           </div>
